@@ -82,7 +82,7 @@ El sistema está diseñado para procesar correos electrónicos entrantes, identi
 ---
 
 #### **Flujo Alternativo: Monitoreo de Correos Pendientes**  
-- **Trigger:** cada 24 h revisa Google Sheets.  
+- **Trigger:** cada 24 h revisa Google Sheets.  
 - **Acción:** busca correos “Alta” sin respuesta.  
 - **Notificación:** envía recordatorio al equipo.
 
@@ -136,10 +136,13 @@ El sistema está diseñado para procesar correos electrónicos entrantes, identi
 
 ---
 
-https://github.com/user-attachments/assets/37ace54c-615d-492e-a5d9-a690605e8d1a
 
+
+  
  
  
+https://github.com/user-attachments/assets/61e747ee-75da-46ec-9e18-61f8255cecc6
+
  
 
 
@@ -150,4 +153,3 @@ https://github.com/user-attachments/assets/37ace54c-615d-492e-a5d9-a690605e8d1a
 - Ismael Reséndiz
 
 ---
-
