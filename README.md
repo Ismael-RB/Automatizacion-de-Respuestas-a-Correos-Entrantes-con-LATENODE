@@ -141,7 +141,8 @@ El sistema está diseñado para procesar correos electrónicos entrantes, identi
   
  
  
-https://github.com/user-attachments/assets/61e747ee-75da-46ec-9e18-61f8255cecc6
+ 
+https://github.com/user-attachments/assets/7f1bc2c5-c357-4833-b54e-1cd71de34b75
 
  
 
