@@ -1,0 +1,12 @@
+{
+  "sheetName": "LATENODEV1",
+  "columns": [
+    "Asunto",
+    "Correo",
+    "Tema",
+    "Urgencia",
+    "Respuesta",
+    "Hora"
+  ]
+}
+ 
