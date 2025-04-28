@@ -1,0 +1,3519 @@
+{
+  "id": "68043e70d29160833daf1e6e",
+  "folderId": "",
+  "title": "ESOLNV1",
+  "description": "",
+  "nodes": [
+    {
+      "id": "68043eca1d716a811498be3f",
+      "title": "NUEVOCORREO",
+      "description": "",
+      "localId": "1",
+      "typeId": "67accade9928affdfd71622a",
+      "params": [
+        {
+          "key": "access_token",
+          "type": "connection",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "{{#6801a19419c7fcf26cf5c2f5}}",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "q",
+          "type": "string_array",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [
+              ""
+            ],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "labels",
+          "type": "select",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "maxResults",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "100",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        }
+      ],
+      "coords": {
+        "x": 0,
+        "y": 62
+      },
+      "calculatedNodeType": {
+        "id": "",
+        "name": "",
+        "alias": "",
+        "description": "",
+        "descriptionAttention": "",
+        "params": [
+          {
+            "key": "access_token",
+            "title": "Connection",
+            "type": "connection",
+            "required": true,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "q",
+            "title": "Search Query",
+            "type": "string_array",
+            "required": false,
+            "description": "Supports the same query format as the Gmail search box. For examples: `from:amy OR from:david` or `in:inbox subject:dinner label:my-family`. [Learn more.](https://support.google.com/mail/bin/answer.py?hl=en&answer=7190)",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "labels",
+            "title": "Labels",
+            "type": "select",
+            "required": false,
+            "description": "Select labels to execute only those events that contain ALL these labels. (By default, all events will be executed)",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": {
+                "options": [],
+                "multiple": true,
+                "fetchOn": [],
+                "withLabel": false,
+                "type": "",
+                "pagination": {
+                  "page": 0,
+                  "context": "",
+                  "supported": true
+                },
+                "query": {
+                  "value": "",
+                  "supported": false
+                }
+              },
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "maxResults",
+            "title": "Maximum Items",
+            "type": "int",
+            "required": false,
+            "description": "Set a limit of the events that will be emitted for one trigger run",
+            "options": {
+              "string": null,
+              "int": {
+                "max": 500,
+                "min": 1,
+                "fetchOn": []
+              },
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "100",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          }
+        ],
+        "systemInfo": {
+          "environment": "",
+          "isPd": true,
+          "isJsn": true,
+          "pdAvailableGetLastRecords": false
+        },
+        "icon": null,
+        "purposes": [],
+        "isPublic": false,
+        "billing": null
+      }
+    },
+    {
+      "id": "68043eca1d716a811498be40",
+      "title": "VARIABLES",
+      "description": "",
+      "localId": "2",
+      "typeId": "649e9700f1d01c605618af05",
+      "params": [
+        {
+          "key": "variables",
+          "type": "string_to_string",
+          "value": {
+            "stringToString": [
+              {
+                "key": "format    ",
+                "value": "business"
+              },
+              {
+                "key": "length",
+                "value": "1 paragraph"
+              },
+              {
+                "key": "role    ",
+                "value": "managger"
+              },
+              {
+                "key": "R",
+                "value": "{{now}}"
+              }
+            ],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        }
+      ],
+      "coords": {
+        "x": 226,
+        "y": 62
+      },
+      "calculatedNodeType": {
+        "id": "",
+        "name": "",
+        "alias": "",
+        "description": "",
+        "descriptionAttention": "",
+        "params": [
+          {
+            "key": "variables",
+            "title": "Variables",
+            "type": "string_to_string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          }
+        ],
+        "systemInfo": null,
+        "icon": null,
+        "purposes": [],
+        "isPublic": false,
+        "billing": null
+      }
+    },
+    {
+      "id": "68043eca1d716a811498be41",
+      "title": "FILTRO1",
+      "description": "",
+      "localId": "3",
+      "typeId": "62cc22317ae28c026d256930",
+      "params": [
+        {
+          "key": "custom_param",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "code",
+          "type": "text",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "export default async function run({ execution_id, input, data }) {\n    // Obtener el contenido y el asunto del mensaje\n    const decodedContent = data[\"{{1.`data`.`decodedContent`}}\"];\n    const subject = data[\"{{1.`data`.`subject`}}\"];\n\n    // Unir el contenido y el asunto en un solo texto\n    const rawText = (decodedContent + ' ' + subject).toLowerCase();\n    const cleanText = rawText.replace(/[^\\w\\s]/g, ''); // Elimina signos de puntuación\n\n    // Verificar si el correo contiene \"ESOSOFTWARE\" o \"ESO SOFTWARE\"\n    if (!cleanText.includes('esosoftware') && !cleanText.includes('eso software')) {\n        return null;  // Si no contiene \"ESOSOFTWARE\" ni \"ESO SOFTWARE\", no procede (retorna null)\n    }\n\n    // Lista de malas palabras\n    const badWords = [\n        \"pendejo\", \"puta\", \"estúpido\", \"mierda\", \"imbécil\", \"chingada\", \"idiota\",\n        \"hijo de puta\", \"mamadas\", \"cabron\", \"culero\", \"perra\", \"malparido\",\n        \"zorra\", \"maldita\", \"mierdero\", \"cagada\", \"coño\", \"gilipollas\", \"carajo\",\n        \"estupida\", \"marica\", \"jodido\", \"joder\", \"pajero\", \"pelotudo\", \"retrasado\",\n        \"imbecil\", \"anormal\", \"pichazo\", \"verga\", \"chingar\", \"chingón\", \"culiado\",\n        \"huevón\", \"guevón\", \"pito\", \"picha\", \"pedo\", \"cojudo\", \"boludo\",\n        \"fuck\", \"shit\", \"bitch\", \"asshole\", \"dick\", \"bastard\", \"faggot\", \"slut\",\n        \"whore\", \"cunt\", \"motherfucker\", \"retard\", \"suck\", \"jerk\", \"prick\",\n        \"douche\", \"pussy\", \"cock\", \"blowjob\", \"damn\", \"hell\", \"bullshit\",\n        \"arse\", \"moron\"\n    ];\n\n    // Función para censurar malas palabras\n    const censorBadWords = (text, wordsList) => {\n        wordsList.forEach(word => {\n            const regex = new RegExp(`\\\\b${word}\\\\b`, 'gi');\n            const censoredWord = word.replace(/\\w/g, '*'); // Reemplaza cada letra por un *\n            text = text.replace(regex, censoredWord);\n        });\n        return text;\n    };\n\n    // Censurar el texto por malas palabras\n    let censoredText = censorBadWords(cleanText, badWords);\n\n    // Lista extendida de palabras clave buenas agrupadas por nivel de urgencia\n    const goodWordsUrgency = {\n        alta: [\n            \"urgent\", \"asap\", \"immediately\", \"right away\", \"straight away\", \"critical\", \"emergency\", \"important\",\n            \"right now\", \"respond fast\", \"fast\", \"very urgent\", \"immediate attention\", \"emergency case\", \"top priority\",\n            \"time-sensitive\", \"high priority\", \"cannot wait\", \"resolve now\", \"act quickly\", \"extremely urgent\",\n            \"as soon as possible\", \"resolve immediately\", \"unacceptable delay\",\n            \"urgente\", \"muy urgente\", \"lo antes posible\", \"lo más pronto posible\", \"atención inmediata\", \"caso crítico\", \n            \"prioridad alta\", \"resolver ya\", \"responder ahora\", \"sin demora\"\n        ],\n        media: [\n            \"help\", \"support\", \"assistance\", \"customer support\", \"client support\", \"technical support\", \n            \"technical issue\", \"billing\", \"charge\", \"charged\", \"double charge\", \"payment\", \"transaction\", \n            \"invoice\", \"factura\", \"issue with invoice\", \"error on invoice\", \"legal\", \"refund\", \"reimbursement\", \n            \"request refund\", \"report\", \"open case\", \"open ticket\", \"reclamation\", \"dispute\", \"problem\", \n            \"claim\", \"conflict\", \"trouble\", \"cannot log in\", \"no access\", \"locked account\", \"suspended\", \n            \"reactivate\", \"suspension\", \"contract\", \"change request\", \"facturación\", \"soporte técnico\", \"reembolso\", \n            \"problema\", \"queja\", \"cobro duplicado\", \"no puedo acceder\", \"cuenta bloqueada\", \"suspendida\", \n            \"desbloquear cuenta\", \"cancelación\", \"actualización de datos\", \"problema de acceso\", \n            \"problema de cobro\", \"ayuda urgente\", \"error de sistema\"\n        ],\n        baja: [\n            \"information\", \"more info\", \"details\", \"question\", \"checking\", \"specifics\", \"numbers\", \n            \"figures\", \"guidance\", \"consultation\", \"data\", \"feedback\", \"inquiry\", \"follow-up\", \n            \"status update\", \"request update\", \"availability\", \"schedule\", \"program\", \"appointment\", \n            \"just wondering\", \"looking for\", \"consulta\", \"información\", \"pregunta\", \"estado\", \"seguimiento\", \n            \"disponibilidad\", \"solicito información\", \"me gustaría saber\", \"actualización\", \"duda\", \n            \"podrían decirme\", \"quisiera saber\", \"saber más\", \"quiero saber\"\n        ]\n    };\n\n    // Función para buscar la primera coincidencia\n    const findMatch = (text, wordList) => {\n        return wordList.find(word => text.includes(word));\n    };\n\n    // Buscar malas palabras primero\n    const matchedBad = findMatch(censoredText, badWords);\n    if (matchedBad) {\n        return {\n            result: \"NO\",\n            matched_word: matchedBad\n        };\n    }\n\n    // Buscar palabras clave buenas según nivel de urgencia\n    for (const [nivel, lista] of Object.entries(goodWordsUrgency)) {\n        const matchedGood = findMatch(censoredText, lista);\n        if (matchedGood) {\n            const urgencia = nivel === 'alta' ? 'Alta' : nivel === 'media' ? 'Media' : 'Baja';\n            return {\n                result: \"YES\",\n                matched_word: matchedGood,\n                urgencia\n            };\n        }\n    }\n\n    // Si no se encontró ninguna palabra clave ni mala palabra\n    return null;  // Si no se encontró nada relevante, no hacer nada\n}\n",
+            "text": "export default async function run({ execution_id, input, data }) {\n    // Obtener el contenido y el asunto del mensaje\n    const decodedContent = data[\"{{1.`data`.`decodedContent`}}\"];\n    const subject = data[\"{{1.`data`.`subject`}}\"];\n\n    // Unir el contenido y el asunto en un solo texto\n    const rawText = (decodedContent + ' ' + subject).toLowerCase();\n    const cleanText = rawText.replace(/[^\\w\\s]/g, ''); // Elimina signos de puntuación\n\n    // Verificar si el correo contiene \"ESOSOFTWARE\" o \"ESO SOFTWARE\"\n    if (!cleanText.includes('esosoftware') && !cleanText.includes('eso software')) {\n        return null;  // Si no contiene \"ESOSOFTWARE\" ni \"ESO SOFTWARE\", no procede (retorna null)\n    }\n\n    // Lista de malas palabras\n    const badWords = [\n        \"pendejo\", \"puta\", \"estúpido\", \"mierda\", \"imbécil\", \"chingada\", \"idiota\",\n        \"hijo de puta\", \"mamadas\", \"cabron\", \"culero\", \"perra\", \"malparido\",\n        \"zorra\", \"maldita\", \"mierdero\", \"cagada\", \"coño\", \"gilipollas\", \"carajo\",\n        \"estupida\", \"marica\", \"jodido\", \"joder\", \"pajero\", \"pelotudo\", \"retrasado\",\n        \"imbecil\", \"anormal\", \"pichazo\", \"verga\", \"chingar\", \"chingón\", \"culiado\",\n        \"huevón\", \"guevón\", \"pito\", \"picha\", \"pedo\", \"cojudo\", \"boludo\",\n        \"fuck\", \"shit\", \"bitch\", \"asshole\", \"dick\", \"bastard\", \"faggot\", \"slut\",\n        \"whore\", \"cunt\", \"motherfucker\", \"retard\", \"suck\", \"jerk\", \"prick\",\n        \"douche\", \"pussy\", \"cock\", \"blowjob\", \"damn\", \"hell\", \"bullshit\",\n        \"arse\", \"moron\"\n    ];\n\n    // Función para censurar malas palabras\n    const censorBadWords = (text, wordsList) => {\n        wordsList.forEach(word => {\n            const regex = new RegExp(`\\\\b${word}\\\\b`, 'gi');\n            const censoredWord = word.replace(/\\w/g, '*'); // Reemplaza cada letra por un *\n            text = text.replace(regex, censoredWord);\n        });\n        return text;\n    };\n\n    // Censurar el texto por malas palabras\n    let censoredText = censorBadWords(cleanText, badWords);\n\n    // Lista extendida de palabras clave buenas agrupadas por nivel de urgencia\n    const goodWordsUrgency = {\n        alta: [\n            \"urgent\", \"asap\", \"immediately\", \"right away\", \"straight away\", \"critical\", \"emergency\", \"important\",\n            \"right now\", \"respond fast\", \"fast\", \"very urgent\", \"immediate attention\", \"emergency case\", \"top priority\",\n            \"time-sensitive\", \"high priority\", \"cannot wait\", \"resolve now\", \"act quickly\", \"extremely urgent\",\n            \"as soon as possible\", \"resolve immediately\", \"unacceptable delay\",\n            \"urgente\", \"muy urgente\", \"lo antes posible\", \"lo más pronto posible\", \"atención inmediata\", \"caso crítico\", \n            \"prioridad alta\", \"resolver ya\", \"responder ahora\", \"sin demora\"\n        ],\n        media: [\n            \"help\", \"support\", \"assistance\", \"customer support\", \"client support\", \"technical support\", \n            \"technical issue\", \"billing\", \"charge\", \"charged\", \"double charge\", \"payment\", \"transaction\", \n            \"invoice\", \"factura\", \"issue with invoice\", \"error on invoice\", \"legal\", \"refund\", \"reimbursement\", \n            \"request refund\", \"report\", \"open case\", \"open ticket\", \"reclamation\", \"dispute\", \"problem\", \n            \"claim\", \"conflict\", \"trouble\", \"cannot log in\", \"no access\", \"locked account\", \"suspended\", \n            \"reactivate\", \"suspension\", \"contract\", \"change request\", \"facturación\", \"soporte técnico\", \"reembolso\", \n            \"problema\", \"queja\", \"cobro duplicado\", \"no puedo acceder\", \"cuenta bloqueada\", \"suspendida\", \n            \"desbloquear cuenta\", \"cancelación\", \"actualización de datos\", \"problema de acceso\", \n            \"problema de cobro\", \"ayuda urgente\", \"error de sistema\"\n        ],\n        baja: [\n            \"information\", \"more info\", \"details\", \"question\", \"checking\", \"specifics\", \"numbers\", \n            \"figures\", \"guidance\", \"consultation\", \"data\", \"feedback\", \"inquiry\", \"follow-up\", \n            \"status update\", \"request update\", \"availability\", \"schedule\", \"program\", \"appointment\", \n            \"just wondering\", \"looking for\", \"consulta\", \"información\", \"pregunta\", \"estado\", \"seguimiento\", \n            \"disponibilidad\", \"solicito información\", \"me gustaría saber\", \"actualización\", \"duda\", \n            \"podrían decirme\", \"quisiera saber\", \"saber más\", \"quiero saber\"\n        ]\n    };\n\n    // Función para buscar la primera coincidencia\n    const findMatch = (text, wordList) => {\n        return wordList.find(word => text.includes(word));\n    };\n\n    // Buscar malas palabras primero\n    const matchedBad = findMatch(censoredText, badWords);\n    if (matchedBad) {\n        return {\n            result: \"NO\",\n            matched_word: matchedBad\n        };\n    }\n\n    // Buscar palabras clave buenas según nivel de urgencia\n    for (const [nivel, lista] of Object.entries(goodWordsUrgency)) {\n        const matchedGood = findMatch(censoredText, lista);\n        if (matchedGood) {\n            const urgencia = nivel === 'alta' ? 'Alta' : nivel === 'media' ? 'Media' : 'Baja';\n            return {\n                result: \"YES\",\n                matched_word: matchedGood,\n                urgencia\n            };\n        }\n    }\n\n    // Si no se encontró ninguna palabra clave ni mala palabra\n    return null;  // Si no se encontró nada relevante, no hacer nada\n}\n",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__ignore_error",
+          "type": "hidden",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        }
+      ],
+      "coords": {
+        "x": 452,
+        "y": 62
+      },
+      "calculatedNodeType": {
+        "id": "",
+        "name": "",
+        "alias": "",
+        "description": "",
+        "descriptionAttention": "",
+        "params": [
+          {
+            "key": "custom_param",
+            "title": "Texto del usuario",
+            "type": "string",
+            "required": false,
+            "description": "El texto a verificar",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "code",
+            "title": "",
+            "type": "text",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": {
+                "lang": "",
+                "prefix": "",
+                "suffix": "",
+                "fetchOn": []
+              },
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          }
+        ],
+        "systemInfo": null,
+        "icon": null,
+        "purposes": [],
+        "isPublic": false,
+        "billing": null
+      }
+    },
+    {
+      "id": "68043eca1d716a811498be42",
+      "title": "YES",
+      "description": "",
+      "localId": "4",
+      "typeId": "6690ec67a44ef00c887da9d3",
+      "params": [
+        {
+          "key": "user_prompt",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "Eres un asistente de servicio al cliente. Un cliente ha enviado el siguiente correo:\n\n {{$1.data.decodedContent}}\n\nTu tarea es:\n \nnivel de urgencia {{$3.matched_word}}.\n\nGenerar una respuesta empática y profesional, adecuada al contenido del mensaje.\n\nIncluir el nombre del cliente {{$1.data.from}} si está disponible y ofrecer ayuda adicional si es necesario .\n\nDevuelve la urgencia y la respuesta generada como un objeto JSON con las claves urgencia y respuesta.",
+            "text": "Eres un asistente de servicio al cliente. Un cliente ha enviado el siguiente correo:\n\n {{$1.data.decodedContent}}\n\nTu tarea es:\n \nnivel de urgencia {{$3.matched_word}}.\n\nGenerar una respuesta empática y profesional, adecuada al contenido del mensaje.\n\nIncluir el nombre del cliente {{$1.data.from}} si está disponible y ofrecer ayuda adicional si es necesario .\n\nDevuelve la urgencia y la respuesta generada como un objeto JSON con las claves urgencia y respuesta.",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "history",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "temperature",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "0.7",
+            "text": "0.7",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "max_tokens",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "512",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "n",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "1",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "stop",
+          "type": "string_array",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "presence_penalty",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "0",
+            "text": "0",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "frequency_penalty",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "0",
+            "text": "0",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "top_p",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "0.9",
+            "text": "0.9",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "top_k",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "response_format",
+          "type": "select",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "repetition_penalty",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "1",
+            "text": "1",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        }
+      ],
+      "coords": {
+        "x": 678,
+        "y": 0
+      },
+      "calculatedNodeType": {
+        "id": "",
+        "name": "",
+        "alias": "",
+        "description": "",
+        "descriptionAttention": "",
+        "params": [
+          {
+            "key": "user_prompt",
+            "title": "User Prompt",
+            "type": "string",
+            "required": false,
+            "description": "Your new question prompt: please note that at least one of the \"User Prompt\" or \"Dialogue History\" fields must be filled in",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "history",
+            "title": "Dialogue History",
+            "type": "string",
+            "required": false,
+            "description": "Valid JSON containing [the array of objects](https://deepinfra.com/Austism/chronos-hermes-13b-v2/api#input-messages), e.g. [{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\": \"Hello\"}]\n\n`role` can be one of (**the roles should alternate**):\n\n`user` - the message author role is user;\n\n`assistant` - the message author role is assistant;\n\n`tool` - the message author role is tool;",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "temperature",
+            "title": "Temperature",
+            "type": "string",
+            "required": false,
+            "description": "What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. We generally recommend altering this or \"Top P\" but not both.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "0.7",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "max_tokens",
+            "title": "Max Tokens",
+            "type": "int",
+            "required": false,
+            "description": "The maximum number of tokens allowed for the generated answer is, by default, limited to the number of tokens the model can return",
+            "options": {
+              "string": null,
+              "int": {
+                "max": 100000,
+                "min": 0,
+                "fetchOn": []
+              },
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "512",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "n",
+            "title": "Chat Completion Choices",
+            "type": "int",
+            "required": false,
+            "description": "How many chat completion choices to generate for each input message, integer between 1 and 2",
+            "options": {
+              "string": null,
+              "int": {
+                "max": 2,
+                "min": 1,
+                "fetchOn": []
+              },
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "1",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "stop",
+            "title": "Stop",
+            "type": "string_array",
+            "required": false,
+            "description": "Up to 16 sequences where the API will stop generating further tokens",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "presence_penalty",
+            "title": "Presence Penalty",
+            "type": "string",
+            "required": false,
+            "description": "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "0",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "frequency_penalty",
+            "title": "Frequency Penalty",
+            "type": "string",
+            "required": false,
+            "description": "Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "0",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "top_p",
+            "title": "Top P",
+            "type": "string",
+            "required": false,
+            "description": "Number between 0 and 1. An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with \"Top P\" probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered. We generally recommend altering this or \"Temperature\" but not both.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "0.9",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "top_k",
+            "title": "Top K",
+            "type": "int",
+            "required": false,
+            "description": "Sample from the specified number of top-ranked tokens, where 0 means the feature is off, and the integer value ranges from 0 to 100000",
+            "options": {
+              "string": null,
+              "int": {
+                "max": 10000,
+                "min": 0,
+                "fetchOn": []
+              },
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "response_format",
+            "title": "Response Format",
+            "type": "select",
+            "required": false,
+            "description": "An object specifying the format that the model must output is used to enable JSON mode",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": {
+                "options": [],
+                "multiple": false,
+                "fetchOn": [],
+                "withLabel": false,
+                "type": "",
+                "pagination": {
+                  "page": 0,
+                  "context": "",
+                  "supported": false
+                },
+                "query": {
+                  "value": "",
+                  "supported": false
+                }
+              },
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "repetition_penalty",
+            "title": "Repetition Penalty",
+            "type": "string",
+            "required": false,
+            "description": "The value of 1 indicates no penalty, while values greater than 1 discourage repetition and values smaller than 1 encourage repetition, with the range of acceptable values being between 0.01 and 2",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "1",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          }
+        ],
+        "systemInfo": {
+          "environment": "",
+          "isPd": true,
+          "isJsn": true,
+          "pdAvailableGetLastRecords": false
+        },
+        "icon": null,
+        "purposes": [],
+        "isPublic": false,
+        "billing": null
+      }
+    },
+    {
+      "id": "68045aeed29160833daf1f02",
+      "title": "RESPONDERCORREO",
+      "description": "",
+      "localId": "15",
+      "typeId": "6644bf88d3bcce75b35b554c",
+      "params": [
+        {
+          "key": "access_token",
+          "type": "connection",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "{{#6801a19419c7fcf26cf5c2f5}}",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "inReplyTo",
+          "type": "select",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [
+              "1965469945ba991f"
+            ],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "subject",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "{{$17.subject_sin_eso}}",
+            "text": "{{$17.subject_sin_eso}}",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "body",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": " {{$17.content}}",
+            "text": " {{$17.content}}",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "bodyType",
+          "type": "select",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [
+              "plaintext"
+            ],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "to",
+          "type": "string_array",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [
+              "{{$1.data.from}}"
+            ],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "cc",
+          "type": "string_array",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [
+              "{{$1.data.from}}"
+            ],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "bcc",
+          "type": "string_array",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "fromName",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "replyTo",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "attachments",
+          "type": "string_to_string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        }
+      ],
+      "coords": {
+        "x": 1130,
+        "y": 62
+      },
+      "calculatedNodeType": {
+        "id": "",
+        "name": "",
+        "alias": "",
+        "description": "",
+        "descriptionAttention": "",
+        "params": [
+          {
+            "key": "access_token",
+            "title": "Connection",
+            "type": "connection",
+            "required": true,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "inReplyTo",
+            "title": "Message ID To Reply",
+            "type": "select",
+            "required": true,
+            "description": "Specify the `message ID` this email is replying to.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": {
+                "options": [
+                  {
+                    "key": "1965469945ba991f",
+                    "value": "Respuesta automática"
+                  }
+                ],
+                "multiple": false,
+                "fetchOn": [],
+                "withLabel": false,
+                "type": "",
+                "pagination": {
+                  "page": 0,
+                  "context": "",
+                  "supported": true
+                },
+                "query": {
+                  "value": "",
+                  "supported": false
+                }
+              },
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "subject",
+            "title": "Subject",
+            "type": "string",
+            "required": true,
+            "description": "Specify a subject for the email.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "body",
+            "title": "Email Body",
+            "type": "string",
+            "required": true,
+            "description": "Include an email body as either plain text or HTML. If HTML, make sure to set the \"Body Type\" prop to html.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "bodyType",
+            "title": "Body Type",
+            "type": "select",
+            "required": false,
+            "description": "Choose to send as plain text or HTML.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": {
+                "options": [
+                  {
+                    "key": "plaintext",
+                    "value": "Plaintext"
+                  }
+                ],
+                "multiple": false,
+                "fetchOn": [],
+                "withLabel": false,
+                "type": "",
+                "pagination": {
+                  "page": 0,
+                  "context": "",
+                  "supported": false
+                },
+                "query": {
+                  "value": "",
+                  "supported": false
+                }
+              },
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [
+                "plaintext"
+              ],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "to",
+            "title": "To",
+            "type": "string_array",
+            "required": true,
+            "description": "Enter a single recipient's email or multiple emails as items in an array.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "cc",
+            "title": "Cc",
+            "type": "string_array",
+            "required": false,
+            "description": "Enter a single recipient's email or multiple emails as items in an array.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "bcc",
+            "title": "Bcc",
+            "type": "string_array",
+            "required": false,
+            "description": "Enter a single recipient's email or multiple emails as items in an array.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "fromName",
+            "title": "From Name",
+            "type": "string",
+            "required": false,
+            "description": "Specify the name that will be displayed in the \"From\" section of the email.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "replyTo",
+            "title": "Reply To",
+            "type": "string",
+            "required": false,
+            "description": "Specify the email address that will appear on the \"Reply-To\" field, if different than the sender's email.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "attachments",
+            "title": "Attachments",
+            "type": "string_to_string",
+            "required": false,
+            "description": "Add any attachments you'd like to include as objects. The `key` should be the **filename** and the value should be the **url** for the attachment. The **filename** must contain the file extension (i.e. `.jpeg`, `.txt`) and the **url** is the download link for the file.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          }
+        ],
+        "systemInfo": {
+          "environment": "",
+          "isPd": true,
+          "isJsn": true,
+          "pdAvailableGetLastRecords": false
+        },
+        "icon": null,
+        "purposes": [],
+        "isPublic": false,
+        "billing": null
+      }
+    },
+    {
+      "id": "68045f15bec360ae5694143a",
+      "title": "FILTRO2",
+      "description": "",
+      "localId": "17",
+      "typeId": "62cc22317ae28c026d256930",
+      "params": [
+        {
+          "key": "code",
+          "type": "text",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "export default async function run({ execution_id, input, data }) {\n    const resultNodo3 = data[\"{{3.result}}\"];\n\n    let content;\n    if (resultNodo3 === \"YES\") {\n        content = data[\"{{4.result.choices.[0].message.content}}\"];\n    } else if (resultNodo3 === \"NO\") {\n        content = data[\"{{21.result.choices.[0].message.content}}\"];\n    }\n\n    try {\n        let parsedContent = JSON.parse(content);\n        content = parsedContent.respuesta || parsedContent.urgencia || content;\n    } catch (error) {\n        console.log('No es un JSON válido, continuamos con el contenido original');\n    }\n\n    if (content) {\n        content = cleanAndFormatText(content);\n        content = content.replace(/\\\\\"/g, '\"');\n    } else {\n        content = \"\";\n    }\n\n    let subjectOriginal = data[\"{{1.data.subject}}\"] || \"\";\n    let subjectSinESO = subjectOriginal.replace(/eso\\s*software/gi, '').trim();\n\n    return {\n        content: content,\n        subject_sin_eso: subjectSinESO\n    };\n}\n\nfunction cleanAndFormatText(input) {\n    return input.replace(/\\n/g, ' ')\n                .replace(/\\s+/g, ' ')\n                .trim();\n}\n",
+            "text": "export default async function run({ execution_id, input, data }) {\n    const resultNodo3 = data[\"{{3.result}}\"];\n\n    let content;\n    if (resultNodo3 === \"YES\") {\n        content = data[\"{{4.result.choices.[0].message.content}}\"];\n    } else if (resultNodo3 === \"NO\") {\n        content = data[\"{{21.result.choices.[0].message.content}}\"];\n    }\n\n    try {\n        let parsedContent = JSON.parse(content);\n        content = parsedContent.respuesta || parsedContent.urgencia || content;\n    } catch (error) {\n        console.log('No es un JSON válido, continuamos con el contenido original');\n    }\n\n    if (content) {\n        content = cleanAndFormatText(content);\n        content = content.replace(/\\\\\"/g, '\"');\n    } else {\n        content = \"\";\n    }\n\n    let subjectOriginal = data[\"{{1.data.subject}}\"] || \"\";\n    let subjectSinESO = subjectOriginal.replace(/eso\\s*software/gi, '').trim();\n\n    return {\n        content: content,\n        subject_sin_eso: subjectSinESO\n    };\n}\n\nfunction cleanAndFormatText(input) {\n    return input.replace(/\\n/g, ' ')\n                .replace(/\\s+/g, ' ')\n                .trim();\n}\n",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__ignore_error",
+          "type": "hidden",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        }
+      ],
+      "coords": {
+        "x": 904,
+        "y": 62
+      },
+      "calculatedNodeType": {
+        "id": "",
+        "name": "",
+        "alias": "",
+        "description": "",
+        "descriptionAttention": "",
+        "params": [
+          {
+            "key": "code",
+            "title": "",
+            "type": "text",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": {
+                "lang": "",
+                "prefix": "",
+                "suffix": "",
+                "fetchOn": []
+              },
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          }
+        ],
+        "systemInfo": null,
+        "icon": null,
+        "purposes": [],
+        "isPublic": false,
+        "billing": null
+      }
+    },
+    {
+      "id": "68049eeebec360ae56941578",
+      "title": "NO",
+      "description": "",
+      "localId": "21",
+      "typeId": "6690ec67a44ef00c887da9d3",
+      "params": [
+        {
+          "key": "user_prompt",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "Un cliente ha enviado un mensaje que no es claro o contiene lenguaje potencialmente agresivo.\n\nPor favor, genera una respuesta profesional y empática que:\n\nInvite al cliente a brindar más detalles de manera cordial.\n\nNo confronte ni reaccione de forma defensiva.\n\nMantenga un tono tranquilo y servicial.\n\nInformación disponible:\n \n\nTexto original:  {{$1.data.decodedContent}}\n\nNombre del cliente (si se tiene):  {{$1.data.from}}",
+            "text": "Un cliente ha enviado un mensaje que no es claro o contiene lenguaje potencialmente agresivo.\n\nPor favor, genera una respuesta profesional y empática que:\n\nInvite al cliente a brindar más detalles de manera cordial.\n\nNo confronte ni reaccione de forma defensiva.\n\nMantenga un tono tranquilo y servicial.\n\nInformación disponible:\n \n\nTexto original:  {{$1.data.decodedContent}}\n\nNombre del cliente (si se tiene):  {{$1.data.from}}",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "history",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "temperature",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "0.7",
+            "text": "0.7",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "max_tokens",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "512",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "n",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "1",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "stop",
+          "type": "string_array",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "presence_penalty",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "0",
+            "text": "0",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "frequency_penalty",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "0",
+            "text": "0",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "top_p",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "0.9",
+            "text": "0.9",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "top_k",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "response_format",
+          "type": "select",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "repetition_penalty",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "1",
+            "text": "1",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        }
+      ],
+      "coords": {
+        "x": 678,
+        "y": 124
+      },
+      "calculatedNodeType": {
+        "id": "",
+        "name": "",
+        "alias": "",
+        "description": "",
+        "descriptionAttention": "",
+        "params": [
+          {
+            "key": "user_prompt",
+            "title": "User Prompt",
+            "type": "string",
+            "required": false,
+            "description": "Your new question prompt: please note that at least one of the \"User Prompt\" or \"Dialogue History\" fields must be filled in",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "history",
+            "title": "Dialogue History",
+            "type": "string",
+            "required": false,
+            "description": "Valid JSON containing [the array of objects](https://deepinfra.com/Austism/chronos-hermes-13b-v2/api#input-messages), e.g. [{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\": \"Hello\"}]\n\n`role` can be one of (**the roles should alternate**):\n\n`user` - the message author role is user;\n\n`assistant` - the message author role is assistant;\n\n`tool` - the message author role is tool;",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "temperature",
+            "title": "Temperature",
+            "type": "string",
+            "required": false,
+            "description": "What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. We generally recommend altering this or \"Top P\" but not both.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "0.7",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "max_tokens",
+            "title": "Max Tokens",
+            "type": "int",
+            "required": false,
+            "description": "The maximum number of tokens allowed for the generated answer is, by default, limited to the number of tokens the model can return",
+            "options": {
+              "string": null,
+              "int": {
+                "max": 100000,
+                "min": 0,
+                "fetchOn": []
+              },
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "512",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "n",
+            "title": "Chat Completion Choices",
+            "type": "int",
+            "required": false,
+            "description": "How many chat completion choices to generate for each input message, integer between 1 and 2",
+            "options": {
+              "string": null,
+              "int": {
+                "max": 2,
+                "min": 1,
+                "fetchOn": []
+              },
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "1",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "stop",
+            "title": "Stop",
+            "type": "string_array",
+            "required": false,
+            "description": "Up to 16 sequences where the API will stop generating further tokens",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "presence_penalty",
+            "title": "Presence Penalty",
+            "type": "string",
+            "required": false,
+            "description": "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "0",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "frequency_penalty",
+            "title": "Frequency Penalty",
+            "type": "string",
+            "required": false,
+            "description": "Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "0",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "top_p",
+            "title": "Top P",
+            "type": "string",
+            "required": false,
+            "description": "Number between 0 and 1. An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with \"Top P\" probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered. We generally recommend altering this or \"Temperature\" but not both.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "0.9",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "top_k",
+            "title": "Top K",
+            "type": "int",
+            "required": false,
+            "description": "Sample from the specified number of top-ranked tokens, where 0 means the feature is off, and the integer value ranges from 0 to 100000",
+            "options": {
+              "string": null,
+              "int": {
+                "max": 10000,
+                "min": 0,
+                "fetchOn": []
+              },
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "response_format",
+            "title": "Response Format",
+            "type": "select",
+            "required": false,
+            "description": "An object specifying the format that the model must output is used to enable JSON mode",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": {
+                "options": [],
+                "multiple": false,
+                "fetchOn": [],
+                "withLabel": false,
+                "type": "",
+                "pagination": {
+                  "page": 0,
+                  "context": "",
+                  "supported": false
+                },
+                "query": {
+                  "value": "",
+                  "supported": false
+                }
+              },
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "repetition_penalty",
+            "title": "Repetition Penalty",
+            "type": "string",
+            "required": false,
+            "description": "The value of 1 indicates no penalty, while values greater than 1 discourage repetition and values smaller than 1 encourage repetition, with the range of acceptable values being between 0.01 and 2",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "1",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          }
+        ],
+        "systemInfo": {
+          "environment": "",
+          "isPd": true,
+          "isJsn": true,
+          "pdAvailableGetLastRecords": false
+        },
+        "icon": null,
+        "purposes": [],
+        "isPublic": false,
+        "billing": null
+      }
+    },
+    {
+      "id": "68052c3ed99b0ba70d7245d0",
+      "title": "HC",
+      "description": "",
+      "localId": "28",
+      "typeId": "6436bab7cf2f0318da6a9ee2",
+      "params": [
+        {
+          "key": "access_token",
+          "type": "connection",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "{{#68052c131d716a811498c440}}",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "drive",
+          "type": "select",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [
+              "My Drive"
+            ],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "sheetId",
+          "type": "select",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [
+              "1u1c4STgC8AX4s9L4CpGQ1NIxxyocmPbddjmmkAG-mgg"
+            ],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "sheetName",
+          "type": "select",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [
+              "Sheet1"
+            ],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "hasHeaders",
+          "type": "select",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [
+              "Yes"
+            ],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "col_0000",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "{{$17.subject_sin_eso}}",
+            "text": "{{$17.subject_sin_eso}}",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "col_0001",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "{{$1.data.from}}: {{$1.data.decodedContent}}",
+            "text": "{{$1.data.from}}: {{$1.data.decodedContent}}",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "col_0002",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "{{$3.matched_word}}",
+            "text": "{{$3.matched_word}}",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "col_0003",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "{{$3.urgencia}}",
+            "text": "{{$3.urgencia}}",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "col_0004",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "{{$17.content}}",
+            "text": "{{$17.content}}",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "col_0005",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "{{$2.R}}",
+            "text": "{{$2.R}}",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        }
+      ],
+      "coords": {
+        "x": 1356,
+        "y": 62
+      },
+      "calculatedNodeType": {
+        "id": "",
+        "name": "",
+        "alias": "",
+        "description": "",
+        "descriptionAttention": "",
+        "params": [
+          {
+            "key": "access_token",
+            "title": "Connection",
+            "type": "connection",
+            "required": true,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "drive",
+            "title": "Drive",
+            "type": "select",
+            "required": false,
+            "description": "Defaults to `My Drive`. To select a [Shared Drive](https://support.google.com/a/users/answer/9310351) instead, select it from this list.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": {
+                "options": [
+                  {
+                    "key": "My Drive",
+                    "value": "My Drive"
+                  }
+                ],
+                "multiple": false,
+                "fetchOn": [],
+                "withLabel": false,
+                "type": "",
+                "pagination": {
+                  "page": 0,
+                  "context": "",
+                  "supported": true
+                },
+                "query": {
+                  "value": "",
+                  "supported": false
+                }
+              },
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "sheetId",
+            "title": "Spreadsheet",
+            "type": "select",
+            "required": true,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": {
+                "options": [
+                  {
+                    "key": "1u1c4STgC8AX4s9L4CpGQ1NIxxyocmPbddjmmkAG-mgg",
+                    "value": "LATENODEV1"
+                  }
+                ],
+                "multiple": false,
+                "fetchOn": [],
+                "withLabel": true,
+                "type": "",
+                "pagination": {
+                  "page": 0,
+                  "context": "",
+                  "supported": true
+                },
+                "query": {
+                  "value": "",
+                  "supported": false
+                }
+              },
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "sheetName",
+            "title": "Sheet Name",
+            "type": "select",
+            "required": true,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": {
+                "options": [
+                  {
+                    "key": "Sheet1",
+                    "value": "Sheet1"
+                  }
+                ],
+                "multiple": false,
+                "fetchOn": [],
+                "withLabel": false,
+                "type": "",
+                "pagination": {
+                  "page": 0,
+                  "context": "",
+                  "supported": true
+                },
+                "query": {
+                  "value": "",
+                  "supported": false
+                }
+              },
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "hasHeaders",
+            "title": "Does the first row of the sheet have headers?",
+            "type": "select",
+            "required": true,
+            "description": "If the first row of your document has headers we'll retrieve them to make it easy to enter the value for each column.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": {
+                "options": [
+                  {
+                    "key": "Yes",
+                    "value": "Yes"
+                  }
+                ],
+                "multiple": false,
+                "fetchOn": [],
+                "withLabel": false,
+                "type": "",
+                "pagination": {
+                  "page": 0,
+                  "context": "",
+                  "supported": false
+                },
+                "query": {
+                  "value": "",
+                  "supported": false
+                }
+              },
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "col_0000",
+            "title": "Asunto",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": {
+                "maxLength": 0,
+                "minLength": 0,
+                "copiable": false,
+                "prefix": "",
+                "prefixes": [],
+                "fetchOn": [],
+                "suffix": ""
+              },
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "col_0001",
+            "title": "Correo",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": {
+                "maxLength": 0,
+                "minLength": 0,
+                "copiable": false,
+                "prefix": "",
+                "prefixes": [],
+                "fetchOn": [],
+                "suffix": ""
+              },
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "col_0002",
+            "title": "Tema",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": {
+                "maxLength": 0,
+                "minLength": 0,
+                "copiable": false,
+                "prefix": "",
+                "prefixes": [],
+                "fetchOn": [],
+                "suffix": ""
+              },
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "col_0003",
+            "title": "Urgencia",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": {
+                "maxLength": 0,
+                "minLength": 0,
+                "copiable": false,
+                "prefix": "",
+                "prefixes": [],
+                "fetchOn": [],
+                "suffix": ""
+              },
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "col_0004",
+            "title": "Respuesta",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": {
+                "maxLength": 0,
+                "minLength": 0,
+                "copiable": false,
+                "prefix": "",
+                "prefixes": [],
+                "fetchOn": [],
+                "suffix": ""
+              },
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "col_0005",
+            "title": "Hora",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": {
+                "maxLength": 0,
+                "minLength": 0,
+                "copiable": false,
+                "prefix": "",
+                "prefixes": [],
+                "fetchOn": [],
+                "suffix": ""
+              },
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          }
+        ],
+        "systemInfo": {
+          "environment": "",
+          "isPd": true,
+          "isJsn": false,
+          "pdAvailableGetLastRecords": false
+        },
+        "icon": null,
+        "purposes": [],
+        "isPublic": false,
+        "billing": null
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "nodeId": "68043eca1d716a811498be41",
+      "localNodeId": "",
+      "routes": [
+        {
+          "condition": {
+            "type": "",
+            "expression": {
+              "value": ""
+            }
+          },
+          "label": "",
+          "nodeId": "68043eca1d716a811498be42",
+          "localNodeId": "",
+          "isFallback": false,
+          "purpose": "input"
+        },
+        {
+          "condition": {
+            "type": "",
+            "expression": {
+              "value": ""
+            }
+          },
+          "label": "",
+          "nodeId": "68049eeebec360ae56941578",
+          "localNodeId": "",
+          "isFallback": false,
+          "purpose": "input"
+        }
+      ],
+      "name": "",
+      "purpose": "output"
+    },
+    {
+      "nodeId": "68043eca1d716a811498be3f",
+      "localNodeId": "",
+      "routes": [
+        {
+          "condition": {
+            "type": "",
+            "expression": {
+              "value": ""
+            }
+          },
+          "label": "",
+          "nodeId": "68043eca1d716a811498be40",
+          "localNodeId": "",
+          "isFallback": false,
+          "purpose": "input"
+        }
+      ],
+      "name": "",
+      "purpose": "output"
+    },
+    {
+      "nodeId": "68043eca1d716a811498be40",
+      "localNodeId": "",
+      "routes": [
+        {
+          "condition": {
+            "type": "",
+            "expression": {
+              "value": " {{askAI(\"if the text \\\"\" + $1.data.decodedContent + \"\\\" contains meaningful content. If it is empty, only whitespace, or lacks relevant information, return \\\"empty\\\", otherwise return \\\"true\\\"\")}} == \"true\""
+            }
+          },
+          "label": "",
+          "nodeId": "68043eca1d716a811498be41",
+          "localNodeId": "",
+          "isFallback": false,
+          "purpose": "input"
+        }
+      ],
+      "name": "",
+      "purpose": "output"
+    },
+    {
+      "nodeId": "68043eca1d716a811498be42",
+      "localNodeId": "",
+      "routes": [
+        {
+          "condition": {
+            "type": "",
+            "expression": {
+              "value": ""
+            }
+          },
+          "label": "",
+          "nodeId": "68045f15bec360ae5694143a",
+          "localNodeId": "",
+          "isFallback": false,
+          "purpose": "input"
+        }
+      ],
+      "name": "",
+      "purpose": "output"
+    },
+    {
+      "nodeId": "68045f15bec360ae5694143a",
+      "localNodeId": "",
+      "routes": [
+        {
+          "condition": {
+            "type": "",
+            "expression": {
+              "value": ""
+            }
+          },
+          "label": "",
+          "nodeId": "68045aeed29160833daf1f02",
+          "localNodeId": "",
+          "isFallback": false,
+          "purpose": "input"
+        }
+      ],
+      "name": "",
+      "purpose": "output"
+    },
+    {
+      "nodeId": "68049eeebec360ae56941578",
+      "localNodeId": "",
+      "routes": [
+        {
+          "condition": {
+            "type": "",
+            "expression": {
+              "value": ""
+            }
+          },
+          "label": "",
+          "nodeId": "68045f15bec360ae5694143a",
+          "localNodeId": "",
+          "isFallback": false,
+          "purpose": "input"
+        }
+      ],
+      "name": "",
+      "purpose": "output"
+    },
+    {
+      "nodeId": "68045aeed29160833daf1f02",
+      "localNodeId": "",
+      "routes": [
+        {
+          "condition": {
+            "type": "",
+            "expression": {
+              "value": ""
+            }
+          },
+          "label": "",
+          "nodeId": "68052c3ed99b0ba70d7245d0",
+          "localNodeId": "",
+          "isFallback": false,
+          "purpose": "input"
+        }
+      ],
+      "name": "",
+      "purpose": "output"
+    }
+  ],
+  "spaceId": "33869",
+  "ownerId": "33869",
+  "version": "182",
+  "tags": [],
+  "release": true,
+  "latestLocalNodeId": "29",
+  "environments": [
+    {
+      "id": "68043e70d29160833daf1e6f",
+      "alias": "prod",
+      "name": "Prod",
+      "actualVersion": "182",
+      "isActive": false
+    },
+    {
+      "id": "68043e70d29160833daf1e70",
+      "alias": "dev",
+      "name": "Dev",
+      "actualVersion": "182",
+      "isActive": false
+    }
+  ],
+  "nodulInfo": {
+    "isNodul": false,
+    "isPublic": false,
+    "isCodul": false
+  },
+  "readOnly": false,
+  "executionBucket": "",
+  "isUsersPublic": false
+}
